@@ -44,16 +44,16 @@ $projetos = [
         <span class="main-red font-inconsolata">Meu trabalho</span>
         <h3 class="font-asap font-medium text-gray-200 text-2xl mt-2">Veja os projetos em destaque</h3>
     </div>
-    <div class="mt-20 grid grid-cols-2 gap-6 px-20">
+    <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-20">
         <?php foreach ($projetos as $projeto) : ?>
-            <div class="flex bg-card rounded gap-5 p-4">
-                <div class="w-1/3">
-                    <img src="<?= $projeto['img']['src']; ?>" alt="<?= $projeto['img']['alt']; ?>">
+            <div class="flex flex-col sm:flex-row bg-card rounded gap-5 p-4">
+                <div class="w-full sm:w-1/3">
+                    <img class="w-full rounded" src="<?= $projeto['img']['src']; ?>" alt="<?= $projeto['img']['alt']; ?>">
                 </div>
-                <div class="w-2/3">
+                <div class="w-full sm:w-2/3">
                     <h4 class="text-gray-200 font-asap"><?= $projeto['titulo']; ?></h4>
                     <p class="text-gray-400 font-maven"><?= $projeto['descricao']; ?></p>
-                    <ul class="flex gap-2 mt-10">
+                    <ul class="flex flex-wrap gap-2 mt-10">
                         <?php
                         $colors = ['lime', 'fuchsia', 'sky', 'rose', 'amber'];
                         foreach ($projeto['stacks'] as $index => $stack) :
