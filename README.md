@@ -1,4 +1,4 @@
-# 💼 Portfólio — Martina Santos
+# 💼 Portfólio — Grégolly França
 
 Site de portfólio pessoal desenvolvido com PHP, Tailwind CSS e fontes do Google Fonts. Apresenta uma seção de introdução, projetos em destaque e informações de contato.
 
